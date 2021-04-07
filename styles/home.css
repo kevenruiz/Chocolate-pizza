@@ -51,7 +51,7 @@ button.share {
 
 .author-bio {
     display: grid;
-    grid-template-columns: 1fr 10fr 2fr;
+    grid-template-columns: 1fr 6fr 2fr;
     grid-template-rows: 1fr 2fr;
     grid-template-areas: "a b d"
                          "a c d";
