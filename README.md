@@ -7,3 +7,10 @@
 5) Is there some state we need to initialize?
 6) Find all the 'events' (user clicks, form submit, etc) in your app. Ask one by one, "What happens when" for each of these events.
 7) Think about how to validate each of your steps
+
+
+## Keven and Culi Plan!
+1)Culi will set up the images in and the layout
+2)Keven will set up the initial HTML code, with an agreed HTML elements
+3)Touch base in 30 minutes
+4)ACP
