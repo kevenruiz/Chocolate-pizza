@@ -14,6 +14,11 @@ h2 {
     font-weight: bold;
 }
 
+h4 {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
 header, main, footer {
     width: 60%;
 }
@@ -22,4 +27,41 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.ingredients {
+    background-image: url('../assets/list-bg.png');
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 16rem;
+    justify-content: center;
+}
+
+.ingredients div {
+    padding-left: 1rem;
+    padding-top: 1rem;
+    font-family: "Comic Sans", cursive;
+}
+
+button.share {
+    text-transform: uppercase;
+}
+
+.author-bio {
+    display: grid;
+    grid-template-columns: 1fr 6fr 2fr;
+    grid-template-rows: 1fr 2fr;
+    grid-template-areas: "a b d"
+                         "a c d";
+    grid-gap: 0.5rem;
+}
+
+.author-bio img {
+    grid-area: a;
+}
+
+.author-bio button {
+    grid-area: d;
 }
