@@ -14,6 +14,11 @@ h2 {
     font-weight: bold;
 }
 
+h4 {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
 header, main, footer {
     width: 60%;
 }
@@ -38,4 +43,25 @@ main {
     padding-left: 1rem;
     padding-top: 1rem;
     font-family: "Comic Sans", cursive;
+}
+
+button.share {
+    text-transform: uppercase;
+}
+
+.author-bio {
+    display: grid;
+    grid-template-columns: 1fr 10fr 2fr;
+    grid-template-rows: 1fr 2fr;
+    grid-template-areas: "a b d"
+                         "a c d";
+    grid-gap: 0.5rem;
+}
+
+.author-bio img {
+    grid-area: a;
+}
+
+.author-bio button {
+    grid-area: d;
 }
