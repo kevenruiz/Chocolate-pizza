@@ -81,20 +81,18 @@ p {
     margin: var(--gutter);
 }
   
-footer {
-    position: fixed;
+/*footer {
     width: 100%;
     bottom: 0;
     height: var(--footer-height);
     display: flex;
-    justify-content: flex-end;
     background-color: var(--color3);
     box-shadow: var(--shadow);
-}
+}*/
   
-  @keyframes pulse {
+@keyframes pulse {
     20% {
-      transform: rotate3d(-10, -10, -10, 50deg) scale(1.2);
+        transform: rotate3d(-10, -10, -10, 50deg) scale(1.2);
     }
 
     40% {
@@ -103,10 +101,9 @@ footer {
 
     60% {
         transform: rotate3d(-10, 10, 10, 50deg) scale(1.2);
-      }
+        }
 
     80% {
         transform: rotate3d(10, 10, 10, 50deg) scale(1);
     }
-
-  }
+}
