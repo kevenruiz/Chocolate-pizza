@@ -29,6 +29,14 @@ main {
     align-items: center;
 }
 
+footer div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .ingredients {
     background-image: url('../assets/list-bg.png');
     background-repeat: no-repeat;
@@ -77,6 +85,7 @@ hr.footer-line {
     color: #333;
     text-align: center;
 }
+
 hr.footer-line::content {
     content: url("assets\logo.png");
     display: inline-block;
@@ -87,7 +96,33 @@ hr.footer-line::content {
     background: white;
 }
 
-.fork-logo {
-    
+article {
+    padding: 3rem;
+    line-height: 1.5rem;
+}
 
+article > * {
+    margin: 1rem;
+}
+
+article p {
+    text-indent: 2rem;
+    opacity: 0.7;
+}
+
+article .print, .posted-on {
+    opacity: 0.5;
+    text-transform: uppercase;
+    margin: 0 1rem;
+}
+
+.print {
+    float: right;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
