@@ -109,3 +109,20 @@ article p {
     text-indent: 2rem;
     opacity: 0.7;
 }
+
+article .print, .posted-on {
+    opacity: 0.5;
+    text-transform: uppercase;
+    margin: 0 1rem;
+}
+
+.print {
+    float: right;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
