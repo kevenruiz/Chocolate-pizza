@@ -9,8 +9,13 @@ body {
     width: 100%;
 }
 
+header, main, footer {
+    width: 70%;
+    padding: 3rem;
+}
+
 h2 {
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: bold;
 }
 
@@ -19,14 +24,25 @@ h4 {
     font-weight: bold;
 }
 
-header, main, footer {
-    width: 60%;
-}
-
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+article > img {
+    width: 100%;
+}
+
+#article-title + div {
+    display: flex;
+    justify-content: space-between;
+}
+
+article .print, .posted-on {
+    opacity: 0.5;
+    text-transform: uppercase;
+    font-weight: 100;
 }
 
 footer div {
@@ -57,6 +73,7 @@ button.share {
     background-color: rgb(168, 101, 77);
     text-transform: uppercase;
 }
+
 .share {
     color: white;
 }
@@ -97,7 +114,6 @@ hr.footer-line::content {
 }
 
 article {
-    padding: 3rem;
     line-height: 1.5rem;
 }
 
@@ -108,16 +124,6 @@ article > * {
 article p {
     text-indent: 2rem;
     opacity: 0.7;
-}
-
-article .print, .posted-on {
-    opacity: 0.5;
-    text-transform: uppercase;
-    margin: 0 1rem;
-}
-
-.print {
-    float: right;
 }
 
 header {
