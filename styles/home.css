@@ -104,6 +104,7 @@ button.share {
 .footer-line {
     width: 100%;
     display: flex;
+    opacity: 50%;
 }
 
 .footer-line hr {
