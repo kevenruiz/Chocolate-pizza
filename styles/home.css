@@ -9,9 +9,14 @@ body {
     width: 100%;
 }
 
-header, main, footer {
+header, main, footer, body > * {
     width: 70%;
+    max-width: 1000px;
     padding: 1rem 3rem;
+}
+
+hr {
+    width: 100%;
 }
 
 h2 {
@@ -72,6 +77,7 @@ footer div {
 button.share {
     background-color: rgb(168, 101, 77);
     text-transform: uppercase;
+    font-size: 1.2rem;;
 }
 
 .share {
@@ -95,22 +101,20 @@ button.share {
     grid-area: d;
 }
 
-hr.footer-line {
-    padding: 0;
-    border: none;
-    border-top: medium double #333;
-    color: #333;
-    text-align: center;
+.footer-line {
+    width: 100%;
+    display: flex;
 }
 
-hr.footer-line::content {
-    content: url("assets\logo.png");
+.footer-line hr {
+    display: inline-block;
+    width: 100%;
+}
+
+.footer-line img {
+    width: 20px;
     display: inline-block;
     position: relative;
-    top: -0.7em;
-    font-size: 1.5em;
-    padding: 0 0.25em;
-    background: white;
 }
 
 article {
