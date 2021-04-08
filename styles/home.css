@@ -11,7 +11,7 @@ body {
 
 header, main, footer {
     width: 70%;
-    padding: 3rem;
+    padding: 1rem 3rem;
 }
 
 h2 {
@@ -118,7 +118,7 @@ article {
 }
 
 article > * {
-    margin: 1rem;
+    margin: 1rem 0rem;
 }
 
 article p {
