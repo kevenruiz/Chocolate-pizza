@@ -9,8 +9,18 @@ body {
     width: 100%;
 }
 
+header, main, footer, body > * {
+    width: 70%;
+    max-width: 1000px;
+    padding: 1rem 3rem;
+}
+
+hr {
+    width: 100%;
+}
+
 h2 {
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: bold;
 }
 
@@ -19,14 +29,25 @@ h4 {
     font-weight: bold;
 }
 
-header, main, footer {
-    width: 60%;
-}
-
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+article > img {
+    width: 100%;
+}
+
+#article-title + div {
+    display: flex;
+    justify-content: space-between;
+}
+
+article .print, .posted-on {
+    opacity: 0.5;
+    text-transform: uppercase;
+    font-weight: 100;
 }
 
 footer div {
@@ -56,7 +77,9 @@ footer div {
 button.share {
     background-color: rgb(168, 101, 77);
     text-transform: uppercase;
+    font-size: 1.2rem;;
 }
+
 .share {
     color: white;
 }
@@ -78,46 +101,34 @@ button.share {
     grid-area: d;
 }
 
-hr.footer-line {
-    padding: 0;
-    border: none;
-    border-top: medium double #333;
-    color: #333;
-    text-align: center;
+.footer-line {
+    width: 100%;
+    display: flex;
+    opacity: 50%;
 }
 
-hr.footer-line::content {
-    content: url("assets\logo.png");
+.footer-line hr {
+    display: inline-block;
+    width: 100%;
+}
+
+.footer-line img {
+    width: 20px;
     display: inline-block;
     position: relative;
-    top: -0.7em;
-    font-size: 1.5em;
-    padding: 0 0.25em;
-    background: white;
 }
 
 article {
-    padding: 3rem;
     line-height: 1.5rem;
 }
 
 article > * {
-    margin: 1rem;
+    margin: 1rem 0rem;
 }
 
 article p {
     text-indent: 2rem;
     opacity: 0.7;
-}
-
-article .print, .posted-on {
-    opacity: 0.5;
-    text-transform: uppercase;
-    margin: 0 1rem;
-}
-
-.print {
-    float: right;
 }
 
 header {
